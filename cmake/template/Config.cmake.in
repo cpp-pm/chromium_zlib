@@ -13,5 +13,5 @@ if(NOT CMAKE_VERSION VERSION_LESS 3.11 AND NOT TARGET ZLIB::zlib)
       PROPERTIES
       IMPORTED_GLOBAL True
   )
-  add_library(ZLIB::ZLIB ALIAS ZLIB::zlib)
+  add_library(ZLIB::zlib ALIAS ZLIB::ZLIB)
 endif()
